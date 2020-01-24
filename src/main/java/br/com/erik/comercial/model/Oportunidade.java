@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -28,6 +29,7 @@ public class Oportunidade {
 	@Column
 	private String descricao;
 	
+	@NotNull
 	@Min(0)
 	@Column
 	private BigDecimal valor;
